@@ -5,14 +5,14 @@ const CTASection = () => {
   return (
     <section className="bg-marble py-20 md:py-28 relative overflow-hidden">
       {/* Decorative line */}
-      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-transparent to-gold/40" />
+      <div className="absolute top-0 left-1/2 -translate-x-1/2 w-px h-24 bg-gradient-to-b from-transparent to-olive/40" />
       
       <div className="container mx-auto px-6 text-center">
         {/* Decorative Element */}
         <div className="flex items-center justify-center gap-4 mb-8">
-          <div className="h-px w-12 bg-gold/40" />
-          <div className="w-2 h-2 bg-gold rounded-full" />
-          <div className="h-px w-12 bg-gold/40" />
+          <div className="h-px w-12 bg-olive/40" />
+          <div className="w-2 h-2 bg-olive rounded-full" />
+          <div className="h-px w-12 bg-olive/40" />
         </div>
 
         <h2 className="text-foreground font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
