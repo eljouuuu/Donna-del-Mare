@@ -21,7 +21,7 @@ const reviews = [
 
 const SocialProofSection = () => {
   return (
-    <section className="bg-cream py-20 md:py-28">
+    <section className="bg-cream-light py-20 md:py-28">
       <div className="container mx-auto px-6">
         {/* Rating */}
         <div className="flex flex-col items-center mb-16">
@@ -29,7 +29,7 @@ const SocialProofSection = () => {
             {[...Array(5)].map((_, i) => (
               <Star
                 key={i}
-                className="w-6 h-6 fill-gold text-gold"
+                className="w-6 h-6 fill-olive text-olive"
               />
             ))}
           </div>
@@ -46,7 +46,7 @@ const SocialProofSection = () => {
               className="text-center p-6 group"
             >
               <div className="mb-6">
-                <span className="text-gold text-5xl font-serif leading-none">"</span>
+                <span className="text-olive text-5xl font-serif leading-none">"</span>
               </div>
               <p className="text-foreground font-serif text-lg md:text-xl italic mb-6 leading-relaxed">
                 {review.quote}

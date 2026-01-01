@@ -46,7 +46,7 @@ const SignatureDishesSection = () => {
       <div className="container mx-auto px-6">
         {/* Header */}
         <div className="text-center mb-16">
-          <span className="text-gold font-sans text-sm tracking-[0.3em] uppercase mb-4 block">
+          <span className="text-olive font-sans text-sm tracking-[0.3em] uppercase mb-4 block">
             From Our Kitchen
           </span>
           <h2 className="text-foreground font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
@@ -76,17 +76,17 @@ const SignatureDishesSection = () => {
               </div>
               
               {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-espresso/90 via-espresso/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-olive/90 via-olive/20 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
               
               {/* Content */}
               <div className="absolute bottom-0 left-0 right-0 p-6 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
                 {dish.featured && (
-                  <span className="inline-block bg-gold/90 text-espresso text-xs font-semibold px-3 py-1 rounded-full mb-3">
+                  <span className="inline-block bg-cream/90 text-olive text-xs font-semibold px-3 py-1 rounded-full mb-3">
                     Guest Favorite
                   </span>
                 )}
-                <h3 className="text-cream font-serif text-2xl mb-2">{dish.name}</h3>
-                <p className="text-cream/70 font-sans text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <h3 className="text-cream-light font-serif text-2xl mb-2">{dish.name}</h3>
+                <p className="text-cream-light/70 font-sans text-sm opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {dish.description}
                 </p>
               </div>

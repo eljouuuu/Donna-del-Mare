@@ -25,13 +25,13 @@ const Navbar = () => {
     <nav
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         isScrolled
-          ? "bg-espresso/95 backdrop-blur-md py-4 shadow-lg"
+          ? "bg-olive/95 backdrop-blur-md py-4 shadow-lg"
           : "bg-transparent py-6"
       }`}
     >
       <div className="container mx-auto px-6 flex items-center justify-between">
         {/* Logo */}
-        <a href="#" className="text-cream font-serif text-2xl">
+        <a href="#" className="text-cream-light font-serif text-2xl font-semibold">
           Donna del Mare
         </a>
 
@@ -41,7 +41,7 @@ const Navbar = () => {
             <a
               key={link.name}
               href={link.href}
-              className="text-cream/80 hover:text-gold font-sans text-sm tracking-wide transition-colors duration-300"
+              className="text-cream-light/80 hover:text-cream font-sans text-sm tracking-wide transition-colors duration-300"
             >
               {link.name}
             </a>
@@ -53,7 +53,7 @@ const Navbar = () => {
 
         {/* Mobile Menu Button */}
         <button
-          className="md:hidden text-cream"
+          className="md:hidden text-cream-light"
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
           aria-label="Toggle menu"
         >
@@ -63,13 +63,13 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isMobileMenuOpen && (
-        <div className="md:hidden absolute top-full left-0 right-0 bg-espresso/98 backdrop-blur-md border-t border-cream/10">
+        <div className="md:hidden absolute top-full left-0 right-0 bg-olive/98 backdrop-blur-md border-t border-cream-light/10">
           <div className="container mx-auto px-6 py-8 flex flex-col gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
-                className="text-cream/80 hover:text-gold font-sans text-lg tracking-wide transition-colors duration-300"
+                className="text-cream-light/80 hover:text-cream font-sans text-lg tracking-wide transition-colors duration-300"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 {link.name}
