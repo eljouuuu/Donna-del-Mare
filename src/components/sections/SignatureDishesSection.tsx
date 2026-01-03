@@ -29,16 +29,16 @@ const dishes = [
     image: truffleImg,
     featured: true,
   },
-  {
-    name: "Burrata",
-    description: "Creamy burrata, cherry tomatoes, prosciutto, basil",
-    image: burrataImg,
-  },
-  {
-    name: "Seafood Linguine",
-    description: "Fresh clams, mussels, shrimp in white wine garlic sauce",
-    image: seafoodImg,
-  },
+  // {
+  //   name: "Burrata",
+  //   description: "Creamy burrata, cherry tomatoes, prosciutto, basil",
+  //   image: burrataImg,
+  // },
+  // {
+  //   name: "Seafood Linguine",
+  //   description: "Fresh clams, mussels, shrimp in white wine garlic sauce",
+  //   image: seafoodImg,
+  // },
 ];
 
 const SignatureDishesSection = () => {
