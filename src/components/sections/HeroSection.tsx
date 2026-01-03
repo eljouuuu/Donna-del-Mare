@@ -26,7 +26,7 @@ const HeroSection = () => {
           </div>
 
           {/* Logo/Name */}
-          <h1 className="text-cream-light font-serif text-5xl md:text-7xl lg:text-8xl font-semibold mb-6 opacity-0 animate-fade-up animation-delay-100 leading-tight tracking-tight">
+          <h1 className="text-cream font-serif text-5xl md:text-7xl lg:text-8xl font-semibold mb-6 opacity-0 animate-fade-up animation-delay-100 leading-tight tracking-tight">
             Donna del Mare
           </h1>
 
@@ -36,7 +36,7 @@ const HeroSection = () => {
           </p>
 
           {/* Subheadline */}
-          <p className="text-cream-light/80 font-sans text-lg md:text-xl max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up animation-delay-300 leading-relaxed">
+          <p className="text-cream/80 font-sans text-lg md:text-xl max-w-2xl mx-auto mb-12 opacity-0 animate-fade-up animation-delay-300 leading-relaxed">
             Authentic Italian flavors, elegant ambiance, and service that makes you feel at home.
           </p>
 
@@ -54,9 +54,9 @@ const HeroSection = () => {
 
       {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-up animation-delay-500">
-        <div className="flex flex-col items-center gap-2 text-cream-light/60">
+        <div className="flex flex-col items-center gap-2 text-cream/60">
           <span className="text-xs tracking-widest uppercase">Scroll</span>
-          <div className="w-px h-8 bg-cream-light/40 animate-pulse" />
+          <div className="w-px h-8 bg-cream/40 animate-pulse" />
         </div>
       </div>
     </section>

@@ -36,7 +36,7 @@ const ExperienceSection = () => {
           <span className="text-cream font-sans text-sm tracking-[0.3em] uppercase mb-4 block">
             The Donna del Mare Way
           </span>
-          <h2 className="text-cream-light font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
+          <h2 className="text-cream font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
             More Than a Meal —<br />
             <span className="font-medium">It's an Experience</span>
           </h2>
@@ -47,13 +47,13 @@ const ExperienceSection = () => {
           {experiences.map((exp, index) => (
             <div
               key={index}
-              className="text-center p-8 rounded-2xl bg-cream-light/5 backdrop-blur-sm border border-cream-light/10 hover:bg-cream-light/10 transition-all duration-300 group"
+              className="text-center p-8 rounded-2xl bg-cream/5 backdrop-blur-sm border border-cream/10 hover:bg-cream/10 transition-all duration-300 group"
             >
               <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-cream/20 flex items-center justify-center group-hover:bg-cream/30 transition-colors duration-300">
                 <exp.icon className="w-7 h-7 text-cream" />
               </div>
-              <h3 className="text-cream-light font-serif text-xl mb-3">{exp.title}</h3>
-              <p className="text-cream-light/70 font-sans text-sm leading-relaxed">
+              <h3 className="text-cream font-serif text-xl mb-3">{exp.title}</h3>
+              <p className="text-cream/70 font-sans text-sm leading-relaxed">
                 {exp.description}
               </p>
             </div>
