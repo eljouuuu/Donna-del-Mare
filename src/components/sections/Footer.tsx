@@ -1,14 +1,16 @@
 import { Instagram, Facebook } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const Footer = () => {
   return (
     <footer className="bg-olive py-16">
       <div className="container mx-auto px-6">
-        <div className="flex flex-col items-center text-center">
-          {/* Logo */}
-          <h3 className="text-cream font-serif text-3xl md:text-4xl mb-4">
-            Donna del Mare
-          </h3>
+        <ScrollReveal>
+          <div className="flex flex-col items-center text-center">
+            {/* Logo */}
+            <h3 className="text-cream font-serif text-3xl md:text-4xl mb-4">
+              Donna del Mare
+            </h3>
           
           {/* Tagline */}
           <p className="text-cream/60 font-sans text-sm tracking-widest uppercase mb-8">
@@ -41,11 +43,12 @@ const Footer = () => {
           {/* Divider */}
           <div className="w-24 h-px bg-cream/20 mb-8" />
 
-          {/* Copyright */}
-          <p className="text-cream/40 font-sans text-sm">
-            © {new Date().getFullYear()} Donna del Mare. All rights reserved.
-          </p>
-        </div>
+            {/* Copyright */}
+            <p className="text-cream/40 font-sans text-sm">
+              © {new Date().getFullYear()} Donna del Mare. All rights reserved.
+            </p>
+          </div>
+        </ScrollReveal>
       </div>
     </footer>
   );

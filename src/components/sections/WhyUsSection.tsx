@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const reasons = [
   "Authentic Italian recipes passed down through generations",
@@ -15,29 +16,30 @@ const WhyUsSection = () => {
       <div className="container mx-auto px-6">
         <div className="max-w-4xl mx-auto">
           {/* Header */}
-          <div className="text-center mb-16">
-            <span className="text-olive font-sans text-sm tracking-[0.3em] uppercase mb-4 block">
-              Our Promise
-            </span>
-            <h2 className="text-olive font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
-              Why Donna del Mare?
-            </h2>
-          </div>
+          <ScrollReveal>
+            <div className="text-center mb-16">
+              <span className="text-olive font-sans text-sm tracking-[0.3em] uppercase mb-4 block">
+                Our Promise
+              </span>
+              <h2 className="text-olive font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
+                Why Donna del Mare?
+              </h2>
+            </div>
+          </ScrollReveal>
 
           {/* Reasons Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
             {reasons.map((reason, index) => (
-              <div
-              key={index}
-              className="flex items-start gap-4 p-6 rounded-2xl bg-olive/5 hover:bg-olive/10 hover:shadow-soft transition-all duration-300 group"
-            >
-              <div className="w-8 h-8 rounded-full bg-olive/20 flex items-center justify-center flex-shrink-0 group-hover:bg-olive/30 transition-colors duration-300">
-                <Check className="w-4 h-4 text-olive" />
+              <ScrollReveal key={index} delay={index * 0.08}>
+                <div className="flex items-start gap-4 p-6 rounded-2xl bg-olive/5 hover:bg-olive/10 hover:shadow-soft transition-all duration-300 group h-full">
+                  <div className="w-8 h-8 rounded-full bg-olive/20 flex items-center justify-center flex-shrink-0 group-hover:bg-olive/30 transition-colors duration-300">
+                    <Check className="w-4 h-4 text-olive" />
+                  </div>
+                  <p className="text-olive font-sans text-lg leading-relaxed">
+                    {reason}
+                  </p>
                 </div>
-                <p className="text-olive font-sans text-lg leading-relaxed">
-                  {reason}
-                </p>
-              </div>
+              </ScrollReveal>
             ))}
           </div>
         </div>

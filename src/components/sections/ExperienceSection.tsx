@@ -1,4 +1,5 @@
 import { Heart, Sparkles, Clock, Users } from "lucide-react";
+import ScrollReveal from "@/components/ScrollReveal";
 
 const experiences = [
   {
@@ -32,31 +33,32 @@ const ExperienceSection = () => {
       
       <div className="container mx-auto px-6 relative z-10">
         {/* Header */}
-        <div className="text-center mb-16">
-          <span className="text-cream font-sans text-sm tracking-[0.3em] uppercase mb-4 block">
-            The Donna del Mare Way
-          </span>
-          <h2 className="text-cream font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
-            More Than a Meal —<br />
-            <span className="font-medium">It's an Experience</span>
-          </h2>
-        </div>
+        <ScrollReveal>
+          <div className="text-center mb-16">
+            <span className="text-cream font-sans text-sm tracking-[0.3em] uppercase mb-4 block">
+              The Donna del Mare Way
+            </span>
+            <h2 className="text-cream font-serif text-4xl md:text-5xl lg:text-6xl mb-6">
+              More Than a Meal —<br />
+              <span className="font-medium">It's an Experience</span>
+            </h2>
+          </div>
+        </ScrollReveal>
 
         {/* Experience Grid */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-6xl mx-auto">
           {experiences.map((exp, index) => (
-            <div
-              key={index}
-              className="text-center p-8 rounded-2xl bg-cream/5 backdrop-blur-sm border border-cream/10 hover:bg-cream/10 transition-all duration-300 group"
-            >
-              <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-cream/20 flex items-center justify-center group-hover:bg-cream/30 transition-colors duration-300">
-                <exp.icon className="w-7 h-7 text-cream" />
+            <ScrollReveal key={index} delay={index * 0.1}>
+              <div className="text-center p-8 rounded-2xl bg-cream/5 backdrop-blur-sm border border-cream/10 hover:bg-cream/10 transition-all duration-300 group h-full">
+                <div className="w-16 h-16 mx-auto mb-6 rounded-full bg-cream/20 flex items-center justify-center group-hover:bg-cream/30 transition-colors duration-300">
+                  <exp.icon className="w-7 h-7 text-cream" />
+                </div>
+                <h3 className="text-cream font-serif text-xl mb-3">{exp.title}</h3>
+                <p className="text-cream/70 font-sans text-sm leading-relaxed">
+                  {exp.description}
+                </p>
               </div>
-              <h3 className="text-cream font-serif text-xl mb-3">{exp.title}</h3>
-              <p className="text-cream/70 font-sans text-sm leading-relaxed">
-                {exp.description}
-              </p>
-            </div>
+            </ScrollReveal>
           ))}
         </div>
       </div>
