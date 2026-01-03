@@ -53,12 +53,12 @@ const HeroSection = () => {
       </div>
 
       {/* Scroll Indicator */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-up animation-delay-500">
+      {/* <div className="absolute bottom-8 left-1/2 -translate-x-1/2 opacity-0 animate-fade-up animation-delay-500">
         <div className="flex flex-col items-center gap-2 text-cream/60">
           <span className="text-xs tracking-widest uppercase">Scroll</span>
           <div className="w-px h-8 bg-cream/40 animate-pulse" />
         </div>
-      </div>
+      </div> */}
     </section>
   );
 };
