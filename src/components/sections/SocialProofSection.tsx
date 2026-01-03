@@ -21,7 +21,7 @@ const reviews = [
 
 const SocialProofSection = () => {
   return (
-    <section className="bg-cream-light py-20 md:py-28">
+    <section className="bg-cream py-20 md:py-28">
       <div className="container mx-auto px-6">
         {/* Rating */}
         <div className="flex flex-col items-center mb-16">
@@ -48,7 +48,7 @@ const SocialProofSection = () => {
               <div className="mb-6">
                 <span className="text-olive text-5xl font-serif leading-none">"</span>
               </div>
-              <p className="text-foreground font-serif text-lg md:text-xl italic mb-6 leading-relaxed">
+              <p className="text-olive font-serif text-lg md:text-xl italic mb-6 leading-relaxed">
                 {review.quote}
               </p>
               <p className="text-muted-foreground font-sans text-sm tracking-wide">
